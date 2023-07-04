@@ -5,7 +5,9 @@ const axios = require('axios');
 var https = require('https');
 const ping_controller = require("../controllers/custom_ping")
 var apiKey = "d1e2d12e8f7c4323af2f5468e0053752";
-
+const cors = require("cors")
+app.use(cors())
+app.use(express.json())
 app.get("/",function(req,res,next){
     
   let decodeUrl = decodeURIComponent(req.query.url);
