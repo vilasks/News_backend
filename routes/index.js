@@ -8,7 +8,7 @@ var apiKey = "d1e2d12e8f7c4323af2f5468e0053752";
 const cors = require("cors")
 app.use(cors())
 app.use(express.json())
-app.get("/",function(req,res,next){
+app.get("/test",function(req,res,next){
     
   let decodeUrl = decodeURIComponent(req.query.url);
   let constructUrl = `${decodeUrl}&apiKey=${apiKey}`;
