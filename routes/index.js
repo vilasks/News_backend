@@ -36,7 +36,7 @@ app.listen(process.env.PORT,(err)=>{
   if(err){
     console.log(err)
   }else{
-    pingJob.start()
+    // pingJob.start()
     console.log(`started listening port ${process.env.PORT}`)
   }
 })
